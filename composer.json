@@ -1,0 +1,33 @@
+{
+    "name": "aikrof/migrator",
+    "description": "Path migrator for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "D.Minakov",
+            "email": "aikrofstark@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4",
+        "illuminate/console": "^7.0",
+        "illuminate/database": "^7.0",
+        "illuminate/support": "^7.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Aikrof\\Migrator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aikrof\\Migrator\\Tests\\": "tests/"
+        }
+    }
+}

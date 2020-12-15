@@ -32,12 +32,13 @@ class MigrateCommand extends LaravelMigrateCommand
             }
 
             $this->setOptions(null, null);
+        
+            $this->afterMigrate();
         }
         else {
             parent::handle();
         }
 
-        $this->afterMigrate();
     }
 
     /**

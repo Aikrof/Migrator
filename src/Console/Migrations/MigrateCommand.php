@@ -32,7 +32,12 @@ class MigrateCommand extends LaravelMigrateCommand
             }
 
             $this->setOptions(null, null);
-        
+            
+            /** Custom paths */
+            if ($this->migrator->paths()) {
+                parent::handle();
+            }
+            
             $this->afterMigrate();
         }
         else {
